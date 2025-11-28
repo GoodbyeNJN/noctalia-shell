@@ -98,6 +98,8 @@ Singleton {
       case "comfortable":
       h = (Settings.data.bar.position === "left" || Settings.data.bar.position === "right") ? 39 : 37;
       break;
+      case "spacious":
+      h = (Settings.data.bar.position === "left" || Settings.data.bar.position === "right") ? 45 : 43;
       default:
       case "default":
       h = (Settings.data.bar.position === "left" || Settings.data.bar.position === "right") ? 33 : 31;
@@ -116,6 +118,8 @@ Singleton {
       case "comfortable":
       h = Math.round(barHeight * 0.73);
       break;
+      case "spacious":
+      h = Math.round(barHeight * 0.70);
       default:
       case "default":
       h = Math.round(barHeight * 0.82);
