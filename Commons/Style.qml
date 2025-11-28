@@ -94,6 +94,8 @@ Singleton {
       return (Settings.data.bar.position === "left" || Settings.data.bar.position === "right") ? 27 : 25;
       case "comfortable":
       return (Settings.data.bar.position === "left" || Settings.data.bar.position === "right") ? 39 : 37;
+      case "spacious":
+      return (Settings.data.bar.position === "left" || Settings.data.bar.position === "right") ? 45 : 43;
       default:
       case "default":
       return (Settings.data.bar.position === "left" || Settings.data.bar.position === "right") ? 33 : 31;
@@ -107,6 +109,8 @@ Singleton {
       return Math.round(barHeight * 0.85);
       case "comfortable":
       return Math.round(barHeight * 0.73);
+      case "spacious":
+      return Math.round(barHeight * 0.70);
       default:
       case "default":
       return Math.round(barHeight * 0.82);
